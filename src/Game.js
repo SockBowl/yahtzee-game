@@ -62,9 +62,7 @@ function Game() {
 
   function doScore(rulename, ruleFn) {
     // evaluate this ruleFn with the dice and score this rulename
-
     updateScore({ ...scores, [rulename]: ruleFn(dice) });
-
     animateRoll(true);
   }
 
